@@ -1,0 +1,12 @@
+{
+    "nav": {
+        "intro": "In a nutshell",
+        "about": "About me",
+        "work": "My Experience",
+        "contact": "Get in touch"
+    },
+    "tip": {
+        "languageSwitch": "Switch to Italian",
+        "social": "My {media} page"
+    }
+}

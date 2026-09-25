@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "fonts.css";
+
+@theme {
+    --color-background: #FAEBD7;
+    --color-primary: #5E4C3A;
+    --color-muted: #8B8589;
+    --color-highlight: #C9761E;
+    --font-primary: "Poppins", sans-serif;
+}
+
+html.dark {
+    --color-background: #242124;
+    --color-primary: #FAEBD7;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+}

@@ -1,0 +1,12 @@
+{
+    "nav": {
+        "intro": "In breve",
+        "about": "Qualcosa su di me",
+        "work": "Le mie esperienze",
+        "contact": "Scrivimi"
+    },
+    "tip": {
+        "languageSwitch": "Passa all'inglese",
+        "social": "La mia pagina {media}"
+    }
+}
