@@ -8,5 +8,11 @@
     "tip": {
         "languageSwitch": "Switch to Italian",
         "social": "My {media} page"
+    },
+    "hero": {
+        "text": [
+            "Web Developer with 14+ years of experience in backend and frontend, across frameworks and CMSs, from web 1.0 to latest trends.",
+            "Currently looking for my next developer role. Available for your next project as a freelance."
+        ]
     }
 }

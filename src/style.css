@@ -1,17 +1,24 @@
 @import "tailwindcss";
 @import "fonts.css";
+@plugin "daisyui" {
+    themes: false;
+}
 
 @theme {
-    --color-background: #FAEBD7;
-    --color-primary: #5E4C3A;
+    --color-light: #FAEBD7;
+    --color-dark: #5E4C3A;
+    --color-darker: #242124;
     --color-muted: #8B8589;
-    --color-highlight: #C9761E;
+    --color-highlight: #ED8F2D;
+
+    --color-background: var(--color-light);
+    --color-primary: var(--color-dark);
     --font-primary: "Poppins", sans-serif;
 }
 
 html.dark {
-    --color-background: #242124;
-    --color-primary: #FAEBD7;
+    --color-background: var(--color-darker);
+    --color-primary: var(--color-light);
 }
 
 ::view-transition-old(root),
@@ -24,4 +31,10 @@ body {
     background-color: var(--color-background);
     color: var(--color-primary);
     font-family: var(--font-primary);
+}
+
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
 }

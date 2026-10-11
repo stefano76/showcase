@@ -8,5 +8,11 @@
     "tip": {
         "languageSwitch": "Passa all'inglese",
         "social": "La mia pagina {media}"
+    },
+    "hero": {
+        "text": [
+            "Web Developer con 14+ anni di esperienza sia nel backend che nel frontend, attraverso vari framework e CMS, dal web 1.0 agli ultimi trend del settore.",
+            "Al momento alla ricerca del mio prossimo ruolo come sviluppatore web. Sono anche disponibile come freelancer per il tuo prossimo progetto."
+        ]
     }
 }

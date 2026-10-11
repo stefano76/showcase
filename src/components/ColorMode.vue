@@ -24,14 +24,6 @@
     .icon-mode:hover {
         transform: scale(1.4);
     }
-
-    /*.bi-sun-fill {
-        fill: var(--color-highlight);
-    }
-
-    .bi-moon-fill {
-        fill: var(--color-muted);
-    }*/
 </style>
 
 <template>

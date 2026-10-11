@@ -1,0 +1,83 @@
+const icons = import.meta.glob('@/assets/img/skills/*.svg', {
+    eager: true,
+    query: '?url',
+    import: 'default'
+}) as Record<string, string>
+
+const icon = (file: string) => icons[`/src/assets/img/skills/${file}.svg`]
+
+interface Logo {
+    name: string
+    svg: string
+    height?: number
+}
+
+export const logos: Logo[] = [
+    { name: 'HTML', svg: icon('html5') },
+    { name: 'CSS', svg: icon('css') },
+    { name: 'JavaScript', svg: icon('javascript') },
+    { name: 'PHP', svg: icon('php'), height: 30 },
+    { name: 'MySQL', svg: icon('mysql') },
+    { name: 'WordPress', svg: icon('wordpress') },
+    { name: 'Bootstrap', svg: icon('bootstrap') },
+    { name: 'Tailwind CSS', svg: icon('tailwind-css'), height: 30 },
+    { name: 'React', svg: icon('react') },
+    { name: 'Next.js', svg: icon('nextdotjs') },
+    { name: 'TypeScript', svg: icon('typescript') },
+    { name: 'Vue', svg: icon('vue'), height: 35 },
+    { name: 'Laravel', svg: icon('laravel') },
+    { name: 'GitHub', svg: icon('github'), height: 40 },
+    { name: 'GitLab', svg: icon('gitlab'), height: 40 },
+    { name: 'Node.js', svg: icon('nodejs') },
+    { name: 'Express', svg: icon('express') },
+    { name: 'Vite', svg: icon('vite'), height: 30 },
+    { name: 'Sass', svg: icon('sass'), height: 35 },
+    { name: 'Less', svg: icon('less'), height: 70 },
+    { name: 'Alpine.js', svg: icon('alpinejs'), height: 30 },
+    { name: 'daisyUI', svg: icon('daisyui') },
+    { name: 'Motion', svg: icon('motion'), height: 25 },
+    { name: 'Vercel', svg: icon('vercel'), height: 35 },
+    { name: 'Netlify', svg: icon('netlify') },
+    { name: 'Three.js', svg: icon('threedotjs') },
+    { name: 'jQuery', svg: icon('jquery'), height: 30 },
+    { name: 'Visual Studio Code', svg: icon('visual-studio-code'), height: 40 },
+    { name: 'Google Analytics', svg: icon('google-analytics'), height: 40 },
+    { name: 'Google Search Console', svg: icon('google-search-console') },
+    { name: 'Google Tag Manager', svg: icon('google-tag-manager') },
+    { name: 'Google Pagespeed Insights', svg: icon('pagespeed-insights') },
+    { name: 'Symfony', svg: icon('symfony') },
+    { name: 'CodeIgniter', svg: icon('codeigniter'), height: 35 },
+    { name: 'WooCommerce', svg: icon('woocommerce'), height: 120 },
+    { name: 'Shopify', svg: icon('shopify') },
+    { name: 'Slack', svg: icon('slack'), height: 35 },
+    { name: 'Notion', svg: icon('notion') },
+    { name: 'Render', svg: icon('render'), height: 45 },
+    { name: 'Cloudflare', svg: icon('cloudflare'), height: 25 },
+    { name: 'GitHub Copilot', svg: icon('github-copilot'), height: 30 },
+    { name: 'Claude', svg: icon('claude') },
+    { name: 'Claude Code', svg: icon('claude-code') },
+    { name: 'Cursor', svg: icon('cursor') },
+    { name: 'Apple', svg: icon('apple') },
+    { name: 'Microsoft', svg: icon('microsoft') },
+    { name: 'Linux', svg: icon('linux') },
+    { name: 'Ubuntu', svg: icon('ubuntu') },
+    { name: 'PostgreSQL', svg: icon('postgresql') },
+    { name: 'MongoDB', svg: icon('mongodb') },
+    { name: 'SQLite', svg: icon('sqlite'), height: 40 },
+    { name: 'Postman', svg: icon('postman') },
+    { name: 'Moment.js', svg: icon('momentjs') },
+    { name: 'Prettier', svg: icon('prettier') },
+    { name: 'Figma', svg: icon('figma') },
+    { name: 'Photoshop', svg: icon('photoshop') },
+    { name: 'Illustrator', svg: icon('illustrator') },
+    { name: 'Adobe XD', svg: icon('xd') },
+    { name: 'Indesign', svg: icon('indesign') },
+    { name: 'Apache', svg: icon('apache'), height: 60 },
+    { name: 'ClickUp', svg: icon('clickup') },
+    { name: 'CoffeeScript', svg: icon('coffeescript') },
+    { name: 'Markdown', svg: icon('markdown'), height: 35 }
+    // { name: 'Docker', svg: icon('docker') },
+    // { name: 'OpenAI', svg: icon('openai') },
+    // { name: 'AWS', svg: icon('aws') },
+    // { name: 'Vue.js', svg: icon('vuedotjs') },
+]

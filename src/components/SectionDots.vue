@@ -9,14 +9,16 @@
 </script>
 
 <template>
+    <!-- prettier-ignore -->
     <nav
-        class="section-dots fixed top-1/2 -translate-y-1/2 left-[calc(50%+40rem)] flex flex-col items-center justify-center gap-6"
+        class="section-dots fixed top-1/2 -translate-y-1/2 left-[calc(50%+40rem)] flex flex-col items-center justify-center gap-8 z-50
+        before:content-attr[''] before:absolute before:w-px before:h-full before:bg-muted/70"
         aria-label="Page sections"
     >
         <button
             v-for="id in sectionIds"
             :key="id"
-            class="dot-button cursor-pointer"
+            class="dot-button cursor-pointer relative z-60"
             :class="activeId === id ? 'active' : ''"
             :aria-label="props.sections[id]"
             v-tooltip="props.sections[id]"
@@ -24,11 +26,10 @@
             @click="goTo(id)"
         >
             <motion.span
-                class="dot block w-3 h-6 rounded"
+                class="dot block w-4 h-4 rounded-xs"
                 :animate="{
                     scale: activeId === id ? 1.4 : 1,
-                    backgroundColor: activeId === id ? 'var(--color-highlight)' : 'var(--color-primary)',
-                    opacity: activeId === id ? '1' : '0.5'
+                    backgroundColor: activeId === id ? 'var(--color-highlight)' : 'var(--color-muted)'
                 }"
                 :transition="{ duration: 0.25, ease: 'easeOut' }"
             />

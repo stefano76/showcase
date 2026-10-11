@@ -9,3 +9,6 @@
 
 ## Deployment
 - Netlify
+
+## Email management
+- Resend
