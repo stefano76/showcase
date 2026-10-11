@@ -1,4 +1,4 @@
-export function imageSrc(path: string, width?: number) : string {
+export function imageSrc(path: string, width?: number): string {
     if (import.meta.env.DEV) {
         return path
     }

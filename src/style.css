@@ -1,19 +1,19 @@
-@import "tailwindcss";
-@import "fonts.css";
+@import 'tailwindcss';
+@import 'fonts.css';
 @plugin "daisyui" {
     themes: false;
 }
 
 @theme {
-    --color-light: #FAEBD7;
-    --color-dark: #5E4C3A;
+    --color-light: #faebd7;
+    --color-dark: #5e4c3a;
     --color-darker: #242124;
-    --color-muted: #8B8589;
-    --color-highlight: #ED8F2D;
+    --color-muted: #8b8589;
+    --color-highlight: #ed8f2d;
 
     --color-background: var(--color-light);
     --color-primary: var(--color-dark);
-    --font-primary: "Poppins", sans-serif;
+    --font-primary: 'Poppins', sans-serif;
 }
 
 html.dark {

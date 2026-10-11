@@ -8,10 +8,10 @@ export default defineConfig({
     plugins: [vue(), tailwindcss()],
     resolve: {
         alias: {
-            '@': fileURLToPath(new URL('./src', import.meta.url)),
-        },
+            '@': fileURLToPath(new URL('./src', import.meta.url))
+        }
     },
     ssgOptions: {
-        formatting: 'minify',
-    },
+        formatting: 'minify'
+    }
 })

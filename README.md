@@ -1,6 +1,7 @@
 # Showcase Stefano Bonuccelli
 
 ## Stack
+
 - Vue 3
 - Vite + vite-ssg
 - TypeScript
@@ -8,7 +9,9 @@
 - Tailwind
 
 ## Deployment
+
 - Netlify
 
 ## Email management
+
 - Resend
